@@ -1,0 +1,4 @@
+Django>=4.2
+djangorestframework>=3.14
+djangorestframework-simplejwt>=5.2   # optional: JWT auth
+python-dotenv>=1.0.0                 # optional: for env vars

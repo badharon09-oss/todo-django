@@ -7,6 +7,7 @@ urlpatterns = [
     path('api/auth/', include('rest_framework.urls')),  # browsable API login
     # if using simplejwt, add token endpoints:
     # path('api/auth/', include('users.urls')),    # if you create custom auth endpoints
+    path('api/users/', include('users.urls')),
 ]
 
 from rest_framework_simplejwt.views import (
@@ -18,3 +19,6 @@ urlpatterns += [
     path('api/auth/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
+
+
+
